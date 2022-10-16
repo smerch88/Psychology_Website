@@ -1,6 +1,36 @@
 .logo {
   fill: $main-text;
+  color: $main-text;
 
   width: 127px;
   height: 38px;
+}
+
+.header__line {
+  border-bottom: 2px solid $main-text;
+  height: 0;
+
+  &--first {
+    min-width: 24px;
+  }
+  &--second {
+    min-width: 36px;
+  }
+  &--third {
+    min-width: 26px;
+  }
+}
+
+.burger {
+  fill: $main-text;
+
+  width: 32px;
+  height: 16px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }

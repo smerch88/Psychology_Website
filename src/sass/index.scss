@@ -1,2 +1,7 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './base/mixins';
+@import './base/variables';
+@import './base/container';
+@import './base/base';
+@import './base/cursor';
+@import './base/visually-hidden';

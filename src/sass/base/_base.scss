@@ -6,12 +6,7 @@ body {
   color: $main-text;
   font-family: $main-font;
   letter-spacing: 0.04em;
-  /* background-image: url(../images/body-bcg.jpg); */
-  // background-image: url(../images/body-bcg-1.png);
-  background-size: contain;
-  background-attachment: fixed;
-
-  overflow-x: clip;
+  background-color: $bg-color;
 }
 
 h1,

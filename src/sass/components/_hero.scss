@@ -52,8 +52,11 @@
 .hero__lang {
   display: flex;
   justify-content: center;
-
   margin-bottom: 20px;
+}
+
+.hero__lang--ukr::before {
+  content: '/';
 }
 
 .hero_buttons {

@@ -1,0 +1,37 @@
+.description {
+}
+.container {
+}
+.container__glaw {
+    padding-top: 54px;
+    padding-bottom: 25px;
+}
+.description__glawtext {
+    padding-bottom: 28px;
+    text-align: center;
+}
+.container__aboutme {
+
+}
+.description__abouttext {
+    display: block;
+    margin-bottom: 64px;
+}
+.description__requestme {
+    display: block;
+    margin-bottom: 37px;
+    text-align: center;
+}
+.description__enumeration {
+    margin-bottom: 13px;
+    display: block;
+}
+.description__enumeration::before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 0px;
+    margin-right: 18px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #8e7f7f;
+}

@@ -6,6 +6,7 @@
 
   &__list {
     margin-bottom: 40px;
+    line-height: 150%;
   }
 
   &__item {
@@ -26,10 +27,6 @@
       border-top: 1px solid #8e7f7f;
     }
   }
-}
-
-.titles__symptomatics {
-  font-size: 30px;
 }
 
 .symptomatics__img-wrapper {

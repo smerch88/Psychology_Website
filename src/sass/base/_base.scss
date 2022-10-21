@@ -40,3 +40,14 @@ a {
 textarea {
   resize: none;
 }
+
+.titles {
+  font-family: $heading-font;
+  font-weight: 500;
+  color: $accent-color;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}

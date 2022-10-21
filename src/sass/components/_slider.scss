@@ -1,0 +1,16 @@
+.swiper {
+  width: 250;
+  height: 185;
+
+  margin-bottom: 28px;
+}
+
+.swiper-slide > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-pagination {
+  text-decoration-color: red;
+}

@@ -34,43 +34,43 @@
 
 }
 
-.container__glaw {
+.container__greetings {
     padding-top: 54px;
     padding-bottom: 25px;
 }
-.description__glawtext--start {
+.description__greetings--start {
     padding-bottom: 28px;
-    font-family: 'Cormorant Garamond';
+    
+    font-family: $heading-font;
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
-    line-height: 30px;
+    line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
     color: #506054;
 }
 
-.description__glawtext--end {
+.description__greetings--end {
     padding-bottom: 28px;
-    font-family: 'Raleway';
+    font-family: $heading-font;
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
-    line-height: 27px;
+    line-height: 1.1;
 /* identical to box height */
 
     text-align: center;
-    text-transform: uppercase;
 
     color: #506054;
 }
-.container__aboutme {
+.container__about {
 
 }
 .description__abouttext {
     display: block;
     margin-bottom: 64px;
-    line-height: 150%;
+    line-height: 1.5;
 }
 .description__requestme {
     display: block;
@@ -79,16 +79,14 @@
 }
 .description__enumeration {
     margin-bottom: 40px;
-    line-height: 150%;
+    line-height: 1.5;
     margin-bottom: 10px;
-
     display: flex;
 
 }
 .description__enumeration--decoration {
     margin-top: 12px;
     margin-right: 12px;
-
     min-width: 26px;
     height: 0px;
     border-top: 1px solid #8e7f7f;

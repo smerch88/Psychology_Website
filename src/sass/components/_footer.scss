@@ -1,0 +1,17 @@
+.footer {
+  padding-top: 80px;
+  text-align: center;
+
+  line-height: calc(19 / 16);
+
+  &__list {
+    margin-bottom: 120px;
+    &--item {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__agreement {
+    margin-bottom: 22px;
+  }
+}

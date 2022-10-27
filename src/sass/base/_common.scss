@@ -4,3 +4,38 @@
   display: flex;
   justify-content: center;
 }
+// !!!!!!!!!!!!!!!!!!!!!!!!
+.box {
+  position: relative;
+  margin: auto;
+  top: 0;
+  width: 280px;
+  height: 340px;
+}
+.brd {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+}
+#icon {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 5%;
+}
+.bt {
+  border-top: 2px solid #506054;
+  top: 0;
+}
+.bl {
+  border-left: 2px solid #506054;
+  left: 0;
+}
+.br {
+  border-right: 2px solid #506054;
+  right: 0;
+}
+.bb {
+  border-bottom: 2px solid #506054;
+  bottom: 0;
+}

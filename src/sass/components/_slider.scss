@@ -1,8 +1,12 @@
 .swiper {
-  width: 250;
-  height: 185;
+  width: 250px;
+  height: 185px;
 
   margin-bottom: 28px;
+  @include desktop {
+    width: calc(250px * 2);
+    height: calc(185px * 2);
+  }
 }
 
 .swiper-slide > img {

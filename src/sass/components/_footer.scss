@@ -2,6 +2,7 @@
   padding-top: 80px;
   text-align: center;
 
+  font-size: 12px;
   line-height: calc(19 / 16);
 
   &__list {
@@ -13,5 +14,29 @@
 
   &__agreement {
     margin-bottom: 22px;
+  }
+}
+
+.footer {
+  &__item {
+    display: flex;
+    justify-content: center;
+
+    &--decoration {
+      margin-top: 6px;
+      margin-right: 8px;
+
+      min-width: 40px;
+      height: 0px;
+      border-top: 1px solid #8e7f7f;
+    }
+    &--decoration2 {
+      margin-top: 6px;
+      margin-left: 8px;
+
+      min-width: 40px;
+      height: 0px;
+      border-top: 1px solid #8e7f7f;
+    }
   }
 }

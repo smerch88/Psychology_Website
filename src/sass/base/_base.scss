@@ -50,4 +50,11 @@ textarea {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 24px;
+
+  @include desktop {
+    font-size: 45px;
+    line-height: calc(54 / 45);
+    text-align: left;
+    margin-bottom: 52px;
+  }
 }

@@ -6,6 +6,11 @@
   height: 38px;
 
   padding: 0 8px;
+
+  @include desktop {
+    width: 155px;
+    height: 46px;
+  }
 }
 
 .header__line {
@@ -30,6 +35,11 @@
 
   width: 32px;
   height: 16px;
+
+  @include desktop {
+    width: 64px;
+    height: 32px;
+  }
 }
 
 .header-wrapper {

@@ -8,6 +8,10 @@
     text-align: center;
     margin-bottom: 10px;
     color: $accent-color;
+    @include desktop {
+      text-align: start;
+      margin-bottom: 0px;
+    }
   }
 
   &__input--text {
@@ -16,16 +20,27 @@
     margin-bottom: 12px;
     border: 0;
     border-bottom: 1px solid;
+
+    @include desktop {
+      width: 475px;
+      margin-bottom: 40px;
+    }
   }
 
   &__accent-text-lower {
     font-weight: 500;
     font-size: 20px;
     line-height: calc(26 / 22);
+    @include desktop {
+      justify-content: normal;
+    }
   }
 
   &__form-item {
     margin-bottom: 14px;
+    @include desktop {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -36,6 +51,13 @@
     padding-left: 88px;
     padding-right: 88px;
     margin-top: 48px;
+  }
+  @include desktop {
+    padding-left: 40px;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -65,4 +87,17 @@
 .contact__form-icons {
   display: flex;
   gap: 24px;
+}
+
+.contact-wrapper {
+  @include desktop {
+    display: flex;
+  }
+}
+
+.contact__form-list {
+  @include desktop {
+    margin-top: 100px;
+    margin-left: 180px;
+  }
 }

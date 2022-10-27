@@ -3,6 +3,9 @@
 .position-center {
   display: flex;
   justify-content: center;
+  @include desktop {
+    justify-content: normal;
+  }
 }
 // !!!!!!!!!!!!!!!!!!!!!!!!
 .box {
@@ -12,6 +15,17 @@
   width: 270px;
   height: 360px;
 }
+.box2 {
+  position: relative;
+  margin: auto;
+  top: 0;
+  width: 270px;
+  height: 360px;
+  width: 560px;
+  height: 500px;
+  margin-left: 0;
+}
+
 .brd {
   position: absolute;
   width: 50%;

@@ -9,6 +9,11 @@
   cursor: $cursor-dark;
 
   color: $white;
+
+  @include desktop {
+    padding: 16px 52px;
+    font-size: 20px;
+  }
 }
 
 .primary-btn {

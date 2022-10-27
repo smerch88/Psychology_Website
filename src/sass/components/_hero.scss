@@ -6,6 +6,12 @@
 
   &__secondary-btn {
     margin-bottom: 16px;
+
+    @include desktop {
+      margin-bottom: 0;
+      padding-left: 44px;
+      padding-right: 44px;
+    }
   }
 
   &__header {
@@ -15,6 +21,11 @@
     text-align: center;
 
     margin-bottom: 16px;
+
+    @include desktop {
+      font-size: 25px;
+      line-height: calc(29 / 25);
+    }
   }
 
   &__name {
@@ -26,6 +37,11 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 24px;
+
+    @include desktop {
+      font-size: 60px;
+      line-height: calc(73 / 60);
+    }
   }
 
   &__options {
@@ -34,12 +50,18 @@
     gap: 16px;
 
     margin-bottom: 48px;
+    @include desktop {
+      flex-direction: column;
+      margin-left: 80px;
+    }
   }
 
   &__thumb {
     margin-bottom: 16px;
     padding: 8px;
     border: 2px solid $accent-color;
+    width: 356px;
+    height: 418px;
   }
 
   &__picture {
@@ -47,12 +69,37 @@
     width: 100%;
     object-fit: cover;
   }
+
+  &__wrapper-image {
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__wrapper {
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      max-width: 700px;
+    }
+  }
 }
 
 .hero__lang {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+
+  @include desktop {
+    margin-left: 300px;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+  }
 }
 
 .hero__lang--ukr::before {
@@ -63,4 +110,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @include desktop {
+    gap: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.hero {
+  &__item {
+    font-size: 20px;
+    display: flex;
+
+    &--decoration {
+      margin-top: 12px;
+      margin-right: 12px;
+
+      min-width: 26px;
+      height: 0px;
+      border-top: 1px solid #8e7f7f;
+    }
+  }
 }

@@ -1,0 +1,103 @@
+.description {
+}
+.container {
+}
+
+.description__img-wrapper {
+    position: relative; 
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+}
+.description__thumb--girl {
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px 0;
+    border-left-color: currentColor;
+    border-image: linear-gradient(#506054 30%, #f4f4f4 30%) 1;
+    padding: 4px;
+    z-index: 0;
+
+ 
+}
+.description__thumb--girl-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.description__thumb--books {
+    position: absolute;
+    left: 156px;
+    top: 174px;
+    z-index: 1;
+
+}
+.description__thumb--books-item {
+
+}
+
+.container__greetings {
+    padding-top: 54px;
+    padding-bottom: 25px;
+}
+.description__greetings--start {
+    padding-bottom: 28px;
+    
+    font-family: $heading-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #506054;
+}
+
+.description__greetings--end {
+    padding-bottom: 28px;
+    font-family: $heading-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1.1;
+/* identical to box height */
+
+    text-align: center;
+
+    color: #506054;
+}
+.container__about {
+
+}
+.description__abouttext {
+    display: block;
+    margin-bottom: 64px;
+    line-height: 1.5;
+}
+.description__requestme {
+    display: block;
+    margin-bottom: 37px;
+    text-align: center;
+}
+.description__enumeration {
+    margin-bottom: 40px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    display: flex;
+
+}
+.description__enumeration--decoration {
+    margin-top: 12px;
+    margin-right: 12px;
+    min-width: 26px;
+    height: 0px;
+    border-top: 1px solid #8e7f7f;
+}
+
+// .description__enumeration::before {
+//     content: '';
+//     display: inline-block;
+//     width: 26px;
+//     height: 0px;
+//     margin-right: 18px;
+//     margin-bottom: 5px;
+//     border-bottom: 1px solid #8e7f7f;
+// }

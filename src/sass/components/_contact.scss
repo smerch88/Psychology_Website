@@ -1,20 +1,42 @@
 .contact {
   &__accent-text {
-    font-size: 24px;
+    font-size: 23px;
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: normal;
 
     text-align: center;
+    margin-bottom: 10px;
+    color: $accent-color;
+  }
 
-    margin-bottom: 36px;
+  &__input--text {
+    width: 100%;
+    background: transparent;
+    margin-bottom: 12px;
+    border: 0;
+    border-bottom: 1px solid;
+  }
+
+  &__accent-text-lower {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(26 / 22);
+  }
+
+  &__form-item {
+    margin-bottom: 14px;
   }
 }
 
 .contact__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  &--btn {
+    padding-left: 88px;
+    padding-right: 88px;
+    margin-top: 48px;
+  }
 }
 
 .icon {
@@ -38,4 +60,9 @@
     height: 40px;
     width: 40px;
   }
+}
+
+.contact__form-icons {
+  display: flex;
+  gap: 24px;
 }

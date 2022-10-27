@@ -4,59 +4,85 @@
     <p class="contact__accent-text">
       Заповніть форму і ми зв'яжемося з вами найближчим часом
     </p>
+    <form action="" class="contact__form">
+      <label for=""
+        ><input
+          type="text"
+          name="username"
+          placeholder="Ім'я"
+          required
+          class="contact__input--text"
+        />
+      </label>
+      <label for=""
+        ><input
+          type="tel"
+          name="phone"
+          placeholder="Телефон"
+          required
+          class="contact__input--text"
+        />
+      </label>
+      <label for="">
+        <textarea
+          name="question"
+          rows="1"
+          placeholder="Ваше запитання"
+          class="contact__input--text"
+        ></textarea>
+      </label>
+      <div class="position-center">
+        <button type="submit" class="primary-btn contact__form--btn">
+          Надіслати
+        </button>
+      </div>
+    </form>
+    <ul>
+      <li class="contact__form-item">
+        <p class="contact__accent-text">Email</p>
+        <div class="position-center">
+          <a
+            href="mailto:annaostapenkowork@gmail.com"
+            class="contact__accent-text-lower"
+            >annaostapenkowork@gmail.com</a
+          >
+        </div>
+      </li>
+      <li class="contact__form-item">
+        <p class="contact__accent-text">Номер телефону</p>
+        <div class="position-center">
+          <a href="tel:+380961111111" class="contact__accent-text-lower"
+            >+38 096 111 11 11</a
+          >
+        </div>
+      </li>
+      <li class="contact__form-item">
+        <p class="contact__accent-text">Соц. мережі</p>
+        <div class="position-center">
+          <ul class="contact__form-icons">
+            <li>
+              <svg class="icon-instagram">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon-telegram">
+                <use href="./images/sprite.svg#icon-telegram"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon-tiktok">
+                <use href="./images/sprite.svg#icon-tiktok"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon-youtube">
+                <use href="./images/sprite.svg#icon-youtube"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
   </div>
-  <form action="" class="contact__form">
-    <label for="" "
-      ><input type="text" name="username" placeholder="Ім'я" required />
-    </label>
-    <label for=""
-      ><input type="tel" name="phone" placeholder="Телефон" required />
-    </label>
-    <label for="">
-      <textarea
-        name="question"
-        rows="1"
-        placeholder="Ваше запитання"
-        class=""
-      ></textarea>
-    </label>
-    <button type="submit" class="primary-btn">Надіслати</button>
-  </form>
-  <ul>
-    <li>
-      <p>Email</p>
-      <a href="mailto:annaostapenkowork@gmail.com"
-        >annaostapenkowork@gmail.com</a
-      >
-    </li>
-    <li>
-      <p>Номер телефону</p>
-      <a href="tel:+380961111111">+38 096 111 11 11</a>
-    </li>
-    <li>
-      <p>Соц. мережі</p>
-      <ul>
-        <li>
-          <svg class="icon-instagram">
-            <use href="./images/sprite.svg#icon-instagram"></use>
-          </svg>
-        </li>
-        <li>
-          <svg class="icon-telegram">
-            <use href="./images/sprite.svg#icon-telegram"></use>
-          </svg>
-        </li>
-        <li>
-          <svg class="icon-tiktok">
-            <use href="./images/sprite.svg#icon-tiktok"></use>
-          </svg>
-        </li>
-        <li>
-          <svg class="icon-youtube">
-            <use href="./images/sprite.svg#icon-youtube"></use>
-          </svg>
-        </li>
-      </ul>
-    </li>
-  </ul>
 </section>

@@ -6,6 +6,10 @@
   &__list {
     margin-bottom: 40px;
     line-height: 150%;
+
+    @include desktop {
+      width: 580px;
+    }
   }
 
   &__item {
@@ -35,6 +39,10 @@
 
   padding-bottom: 24px;
   margin-bottom: 40px;
+
+  @include desktop {
+    width: 580px;
+  }
 }
 
 .symptomatics__thumb--girl {
@@ -85,5 +93,22 @@
     object-fit: cover;
     border-top: 4px solid $white;
     border-right: 4px solid $white;
+  }
+}
+
+.symptomatics-wrapper {
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+}
+
+.symptomatics__primary-btn {
+  @include desktop {
+    margin-left: 780px;
+    margin-bottom: 60px;
   }
 }

@@ -8,6 +8,7 @@
 @import './base/buttons';
 
 @import './components/header';
+@import './components/menu';
 @import './components/hero';
 @import './components/description';
 @import './components/advantages';
@@ -16,3 +17,10 @@
 @import './components/contact';
 @import './components/footer';
 @import './components/slider';
+
+// separate pages
+@import './components/individual/individual';
+@import './components/how/how';
+@import './components/group/group';
+@import './components/aboutme/aboutmeabout';
+@import './components/aboutme/aboutmeliterature';

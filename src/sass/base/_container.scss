@@ -4,13 +4,13 @@
   margin: 0 auto;
 
   @include mobile {
-    width: 480px;
+    min-width: 320px;
   }
 
-  // @include tablet {
-  //   width: 768px;
-  //   padding-inline: 32px;
-  // }
+  @include tablet {
+    width: 768px;
+    padding-inline: 32px;
+  }
 
   @include desktop {
     width: 1200px;

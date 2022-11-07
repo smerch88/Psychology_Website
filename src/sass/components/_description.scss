@@ -99,6 +99,7 @@
 .description__enumeration-list {
   margin-bottom: 40px;
   @include desktop {
+    margin-left: 80px;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;

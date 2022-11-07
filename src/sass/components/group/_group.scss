@@ -1,0 +1,22 @@
+.groups {
+  &__span {
+    padding-bottom: 24px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+.titles--25 {
+  font-family: $heading-font;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 150%;
+  color: $accent-color;
+  font-weight: 500;
+
+  margin-bottom: 20px;
+}

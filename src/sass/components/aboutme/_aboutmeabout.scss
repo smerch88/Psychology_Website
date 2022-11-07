@@ -62,8 +62,10 @@
     }
 
     &--inner {
-      max-width: 700px;
-      margin-left: 60px;
+      @include desktop {
+        max-width: 700px;
+        margin-left: 60px;
+      }
     }
   }
 
@@ -109,7 +111,7 @@
 }
 
 .description__greetings--aboutmeabout {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .contact__accent-text--aboutmeabout {

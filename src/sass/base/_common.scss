@@ -53,3 +53,16 @@
   border-bottom: 2px solid #506054;
   bottom: 0;
 }
+
+.link-nav {
+  font-size: 16px;
+  line-height: calc(19px / 16px);
+  margin-bottom: 24px;
+
+  &:hover {
+    color: $accent-color;
+    @include desktop {
+      margin-bottom: 40px;
+    }
+  }
+}

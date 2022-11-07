@@ -1,7 +1,7 @@
 .backdrop {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -22,15 +22,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  //   transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
 
   padding: 40px;
 
   z-index: 300;
-  @include desktop {
-    width: 528px;
-    height: 581px;
-  }
+  // @include desktop {
+  //   width: 528px;
+  //   height: 581px;
+  // }
 }
 
 .data-modal.is-hidden {
@@ -39,33 +39,47 @@
 }
 
 .close {
-  //   position: absolute;
-  //   top: 24px;
-  //   right: 240px;
+  font-size: 28px;
 
-  //   fill: black;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  fill: black;
   height: 30px;
   width: 30px;
 
-  //   background-color: transparent;
-  border-radius: 50%;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-
-  //   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-// .modal-button-wrapper {
-//   margin-left: 90%;
-// }
-// .close-icon {
-//   position: relative;
-//   right: 7px;
-//   top: -2px;
-// }
 
 .close:hover,
 .close:focus {
-  fill: var(--blueColor);
   cursor: pointer;
+  color: $accent-color;
+}
+
+.menu-list {
+  text-transform: uppercase;
+  text-align: center;
+
+  font-family: $heading-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 150%;
+
+  margin-bottom: 200px;
+
+  @include desktop {
+    font-size: 35px;
+    margin-bottom: 152px;
+  }
+}
+.menu-items {
+  margin-bottom: 12px;
+}
+
+.contact__form-icons--menu {
+  justify-content: center;
 }

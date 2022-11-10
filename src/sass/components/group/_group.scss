@@ -1,4 +1,8 @@
 .groups {
+  @include desktop {
+    margin-bottom: 120px;
+  }
+
   &__span {
     padding-bottom: 24px;
   }
@@ -19,4 +23,18 @@
   font-weight: 500;
 
   margin-bottom: 20px;
+}
+
+.remove-margin {
+  margin-left: 0;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  margin-left: 0;
+  justify-content: space-between;
+}
+
+.space-btw {
+  justify-content: space-between;
 }

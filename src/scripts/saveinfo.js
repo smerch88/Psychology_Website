@@ -20,14 +20,9 @@ const renderData = () => {
   let dataToRender = JSON.parse(localStorage.getItem(FORM_KEY)) ?? {}; // оператор нульового злиття
 
   const inputNames = Object.keys(dataToRender);
-  console.log(inputNames);
   inputNames.forEach(inputName => {
     let input = formEl.elements[inputName];
-    console.log('Debug input', input);
-
     let valueKey = 'value';
-    console.log('Debug valueKey', valueKey);
-
     input[valueKey] = dataToRender[inputName];
   });
 };
@@ -40,7 +35,6 @@ function handleSubmit(event) {
   const formData = new FormData(formEl);
   for (const [name, value] of formData.entries()) {
     if (!value) {
-      console.log('fill input');
       return;
     }
     finalData[name] = value;
@@ -48,6 +42,5 @@ function handleSubmit(event) {
 
   finalData.canBeSpammed = !!finalData.canBeSpammed; // Double NOT (!!)
   localStorage.removeItem(FORM_KEY);
-  console.log(finalData);
   formEl.reset();
 }

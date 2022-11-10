@@ -1,4 +1,7 @@
 .how {
+  @include desktop {
+    margin-bottom: 120px;
+  }
   &__list {
     font-size: 18px;
     line-height: 150%;

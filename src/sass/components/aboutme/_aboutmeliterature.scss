@@ -18,3 +18,13 @@
     line-height: calc(42px / 35px);
   }
 }
+
+.column-wrapper {
+  @include desktop {
+    column-count: 2;
+  }
+}
+
+.margin-bot {
+  margin-bottom: 40px;
+}

@@ -4,6 +4,10 @@
 
   padding: 28px 0;
 
+  @include desktop {
+    margin-bottom: 120px;
+  }
+
   &__secondary-btn {
     margin-bottom: 16px;
 
@@ -111,11 +115,21 @@
 .hero_buttons {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @include desktop {
     gap: 60px;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 

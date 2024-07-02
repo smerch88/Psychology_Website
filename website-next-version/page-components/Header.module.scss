@@ -1,0 +1,56 @@
+@import '../scss/_common';
+@import '../scss/_variables';
+@import '../scss/mixins';
+
+.logo {
+  fill: $main-text;
+  color: $main-text;
+
+  width: 127px;
+  height: 38px;
+
+  padding: 0 8px;
+
+  @include desktop {
+    width: 155px;
+    height: 46px;
+  }
+}
+
+.header__line {
+  border-bottom: 2px solid $main-text;
+  height: 0;
+  display: flex;
+  flex-grow: 1;
+
+  &--first {
+    min-width: 24px;
+  }
+  &--second {
+    min-width: 36px;
+  }
+  &--third {
+    min-width: 26px;
+  }
+}
+
+.burger {
+  fill: $main-text;
+
+  width: 32px;
+  height: 24px;
+
+  @include desktop {
+    width: 64px;
+    height: 32px;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 40px;
+}

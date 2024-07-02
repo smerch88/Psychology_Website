@@ -1,0 +1,72 @@
+%btn {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(21 / 18);
+
+  padding: 16px 24px;
+
+  cursor: $cursor-dark;
+
+  color: $white;
+
+  @include desktop {
+    padding: 16px 52px;
+    font-size: 20px;
+  }
+}
+
+.primary-btn {
+  @extend %btn;
+  background-color: $accent-color;
+
+  border: none;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic-bezier;
+
+  &:hover {
+    background-color: $main-text;
+  }
+
+  &:focus {
+    background-color: transparent;
+    color: $accent-color;
+  }
+}
+
+.secondary-btn {
+  @extend %btn;
+  background-color: transparent;
+  border: 2px solid $accent-color;
+  padding: 16px 44px;
+  color: $accent-color;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic-bezier;
+
+  &:hover {
+    border-color: $main-text;
+    color: $main-text;
+  }
+
+  &:focus {
+    background-color: transparent;
+    color: $accent-color;
+  }
+}
+
+// .adaptive-btn {
+//   @extend .secondary-btn;
+
+//   @media (max-width: 1199.5px) {
+//     padding: 6px 10px;
+
+//     font-weight: 600;
+//     font-size: 8px;
+//     line-height: calc(10 / 8);
+//     letter-spacing: normal;
+//   }
+// }

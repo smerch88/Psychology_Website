@@ -1,0 +1,65 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+.position-center {
+  display: flex;
+  justify-content: center;
+  @include desktop {
+    justify-content: normal;
+  }
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!
+.box {
+  position: relative;
+  margin: auto;
+  top: 0;
+  width: 270px;
+  height: 360px;
+}
+.box2 {
+  position: relative;
+  margin: auto;
+  top: 0;
+  width: 270px;
+  height: 360px;
+  width: 560px;
+  height: 500px;
+  margin-left: 0;
+}
+
+.brd {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+#icon {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  top: 5%;
+}
+.bt {
+  border-top: 2px solid #506054;
+  top: 0;
+}
+.bl {
+  border-left: 2px solid #506054;
+  left: 0;
+}
+.br {
+  border-right: 2px solid #506054;
+  right: 0;
+}
+.bb {
+  border-bottom: 2px solid #506054;
+  bottom: 0;
+}
+
+.link-nav {
+  font-size: 16px;
+  line-height: calc(19px / 16px);
+  margin-bottom: 24px;
+
+  &:hover {
+    color: $accent-color;
+  }
+}

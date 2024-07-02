@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  padding-inline: 26px;
+  margin: 0 auto;
+
+  @include mobile {
+    min-width: 320px;
+  }
+
+  @include tablet {
+    width: 768px;
+    max-width: 1199px;
+    padding-inline: 32px;
+  }
+
+  @include desktop {
+    width: 1200px;
+    padding-inline: 16px;
+  }
+}

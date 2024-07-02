@@ -1,0 +1,60 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+body {
+  color: $main-text;
+  font-family: $main-font;
+  letter-spacing: 0.04em;
+  background-color: $bg-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  cursor: $cursor-dark;
+}
+
+textarea {
+  resize: none;
+}
+
+.titles {
+  font-family: $heading-font;
+  font-weight: 500;
+  color: $accent-color;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+
+  @include desktop {
+    font-size: 45px;
+    line-height: calc(54 / 45);
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
